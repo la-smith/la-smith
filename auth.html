@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="with=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<meta name="description" content="Senior Capstone">
+	<title>Big Data Authentication Form</title>
+	<link rel="stylesheet" href="stylesauth.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght!100;200;300;400;600;700&display=wap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootscrapcdn.com/font-awesome//4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="text-box">
+		<h1>Please Sign In to View Your Results</h1>
+	</div>
+	<div class="container">
+		<form>
+			<i class="fas fa-paper-plane"></i>
+			
+			<div class="input-group">
+				<label>First Name and Last Initial</label>
+				<input type="text" placeholder="Enter your name" id="contact-name" onkeyup="validateName()">
+				<span id="name-error">Required</span>
+			</div>
+			
+			<div class="input-group">
+				<label>Participant Number</label>
+				<input type="text" placeholder="Enter Participant Number" id="contact-participant" onkeyup="validateParticipant()">
+				<span id="participant-error">Required</span>
+			</div>
+			
+			<div class="input-group">
+				<label>Email Address</label>
+				<input type="email" placeholder="Enter Email" id="contact-email" onkeyup="validateEmail()">
+				<span id="email-error">Required</span>
+			</div>
+			
+			<div class="input-group">
+				<label>Password</label>
+				<input type="passwd" placeholder="Enter Password" id="contact-passwd" onkeyup="validatePassword()">
+				<span id="passwd-error">Required</span>
+			</div>
+			
+			<button onclick="return validateForm()">Submit</button>
+			<span id="submit-error">Please Complete ALL Fields.</span>
+			
+		</form>
+	</div>
+		
+		<script src="scriptauth.js"></script>
+
+
+
+</body>
+</html>
